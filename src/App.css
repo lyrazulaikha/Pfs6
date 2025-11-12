@@ -1,0 +1,117 @@
+/* =======================================
+   1. Variabel Warna Pink & Putih
+   ======================================= */
+:root {
+  --pink-primary: #FF69B4; /* Hot Pink */
+  --pink-secondary: #FDE7F0; /* Pink sangat muda untuk background */
+  --white: #ffffff;
+  --text-dark: #333333; 
+  --border-pink: #F5B0C9; 
+}
+
+/* =======================================
+   2. Styling Global
+   ======================================= */
+
+/* Latar belakang halaman: Pink sangat muda */
+body {
+  background-color: var(--pink-secondary); 
+  font-family: 'Arial', sans-serif; 
+}
+
+/* Container utama aplikasi: Putih bersih */
+.container.my-5 {
+  background-color: var(--white); 
+  padding: 40px;
+  border-radius: 15px; 
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2); 
+}
+
+/* Styling Tajuk (Heading) */
+h1 {
+  color: var(--pink-primary); 
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* =======================================
+   3. Styling Kustom (Tombol & Card)
+   ======================================= */
+
+/* Tombol Pink Kustom (btn-pink) */
+.btn-pink {
+  color: var(--white);
+  background-color: var(--pink-primary);
+  border-color: var(--pink-primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn-pink:hover {
+  background-color: #E05AA3; 
+  border-color: #E05AA3;
+  transform: translateY(-1px); 
+}
+
+.btn-pink:active, .btn-pink:focus {
+  background-color: #C14A89 !important;
+  border-color: #C14A89 !important;
+  box-shadow: 0 0 0 0.25rem var(--pink-secondary) !important;
+}
+
+/* Kartu Tugas (Card) */
+.task-card {
+  border: 1px solid var(--border-pink); 
+  border-left: 5px solid var(--pink-primary); /* Garis tegas pink */
+  border-radius: 10px;
+  margin-bottom: 10px; /* Jarak antar tugas lebih rapat */
+  box-shadow: none; 
+  background-color: var(--white);
+  padding: 10px 0; /* Padding vertikal dihilangkan dari Card.Body diganti di sini*/
+}
+
+.task-card.task-done {
+    background-color: var(--pink-secondary); 
+    border-left-color: var(--border-pink);
+    opacity: 0.9;
+}
+
+/* Teks Judul */
+.task-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Badge Done/Pending (Hanya Pink & Putih) */
+.badge-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 7px;
+    border-radius: 4px;
+}
+
+.status-Pending {
+    background-color: var(--white);
+    color: var(--pink-primary);
+    border: 1px solid var(--pink-primary);
+}
+
+.status-Done {
+    background-color: var(--pink-primary); 
+    color: var(--white);
+}
+
+/* Tombol Aksi */
+.btn-action-outline {
+    border-color: #FFC0CB; 
+    color: var(--pink-primary);
+}
+.btn-action-outline:hover {
+    background-color: #FFC0CB;
+    color: var(--white);
+}
